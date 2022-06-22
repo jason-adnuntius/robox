@@ -60,3 +60,6 @@ retry apt-get --assume-yes install haveged; error
 
 # Autostart the haveged daemon.
 systemctl enable haveged.service
+
+# install nfs client packages
+retry apt-get --assume-yes install nfs-common portmap; error
